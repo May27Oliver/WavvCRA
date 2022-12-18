@@ -1,0 +1,106 @@
+.signin-wrapper {
+  background-image: url(../../assets/signin_bg.jpg);
+  background-size: cover;
+}
+
+.signin-out {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 131px);
+}
+
+.signin-out h2 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.signin-out > div {
+  padding: 30px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.signin-email {
+}
+
+.signin-email input {
+  display: block;
+  outline: 0;
+}
+
+.signin-email p {
+  width: 100%;
+}
+
+.signin-email ::placeholder {
+  color: #ccc;
+}
+
+.signin-email input[type="email"],
+.signin-email input[type="password"],
+.signin-email input[type="text"] {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.signin-email input[type="Submit"] {
+  width: 100%;
+  height: 50px;
+  border: 0;
+  background-color: var(--pri-color);
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.signin-email input[type="Submit"]:hover {
+  background-color: var(--pri-hover);
+}
+
+.signin-email ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-top: auto;
+}
+
+.signin-email li {
+}
+
+.signin-email li a {
+  color: #999;
+}
+
+.signin-email li a:hover {
+  color: var(--pri-color);
+}
+
+.signin-wallet {
+}
+
+.signin-wallet img {
+  width: 70%;
+  margin-bottom: 30px;
+  filter: grayscale(1);
+}
+
+.signin-wallet p {
+}
+
+.signin-or {
+  font-size: 28px;
+  margin: 0 50px;
+}

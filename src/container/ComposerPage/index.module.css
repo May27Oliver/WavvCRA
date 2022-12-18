@@ -1,0 +1,143 @@
+.user-out {
+  width: 1020px;
+  margin: 50px auto;
+}
+
+/* -------------- Head Block ------------- */
+.user-head {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.user-head > img {
+  width: 300px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.user-head_info {
+}
+
+.user-head_info h1 {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 2;
+}
+
+.user-head_info p {
+  margin-bottom: 20px;
+}
+
+.user-head_info ul {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.user-head_info ul li {
+  color: #999;
+  margin-right: 20px;
+}
+
+.user-head_info ul li svg {
+  margin-right: 5px;
+}
+
+.user-head_info ol {
+  display: flex;
+}
+
+.user-head_info ol li {
+  margin-right: 10px;
+}
+
+.user-head_info ol button {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.user-head_info ol li svg {
+  margin-right: 10px;
+}
+
+.user-head_info ol button:hover {
+  background-color: var(--pri-color);
+  color: white;
+  border-color: var(--pri-color);
+}
+
+/* -------------- Tracks Block ------------- */
+.user-tracks {
+}
+
+.user-tracks h3 {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-top: 20px;
+}
+
+.user-tracks ul {
+}
+
+.user-tracks ul li {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 10px;
+}
+
+.user-tracks ul li:hover {
+  background-color: #f6f6f6;
+}
+
+.user-tracks img {
+  height: 50px;
+}
+
+.user-tracks h2 {
+  flex-basis: 0;
+  flex-grow: 3;
+}
+
+.user-tracks p {
+  flex-basis: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.user-tracks span {
+  color: #999;
+  flex-grow: 1;
+  text-align: right;
+}
+
+.user-tracks_cover {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.user-tracks_cover svg {
+  border-radius: 50%;
+  line-height: 28px;
+  color: var(--pri-color);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 28px;
+  transform: translate(-50%, -50%);
+  background-image: radial-gradient(#fff, transparent);
+  display: none;
+}
+
+.user-tracks ul li:hover svg {
+  display: block;
+}

@@ -1,0 +1,141 @@
+.player {
+  width: 100vw;
+  height: 80px;
+  background-color: #311717;
+  position: fixed;
+  left: 0;
+  z-index: 10;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.player.show {
+  bottom: 0;
+  transition: 0.8s;
+}
+.player.close {
+  bottom: -80px;
+  transition: 0.8s;
+}
+/* info */
+.player-info {
+  cursor: pointer;
+  color: white;
+  flex: 1 0 30%;
+  /* width: 30%; */
+}
+
+.player-info img {
+  height: 60px;
+  margin-right: 10px;
+  float: left;
+}
+
+.player-info h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.player-info span {
+  display: block;
+  font-size: 13px;
+  opacity: 0.5;
+}
+/* control */
+.player-control {
+  flex-grow: 3 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-control svg {
+  font-size: 38px;
+  margin: 0 10px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.player-control i:first-child,
+.player-control i:last-child {
+  font-size: 18px;
+}
+
+.player-control i:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+/* volume */
+.player-volume {
+  flex: 1 0 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+.player-volume svg {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.player-volume_bar {
+  width: 100px;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.player-volume_bar p {
+  height: 5px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.player-control svg:first-child,
+.player-control svg:last-child {
+  font-size: 18px;
+}
+.progressbar input[type="range"] {
+  -webkit-appearance: none;
+  outline: 0;
+  border: 0;
+  width: 85%;
+  max-width: 85%;
+  margin: 10px 0 0 0;
+  transition: box-shadow 0.2s ease-in-out;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  /* background: none; */
+  border-radius: 10px;
+}
+.progressbar input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: rgba(241, 239, 239, 0.5);
+}
+.progressbar input[type="range"]::-webkit-slider-thumb:before,
+.progressbar input[type="range"]::-webkit-slider-thumb:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  width: 2000px; /* 長度很長沒關係，因為剛剛有用 overflow:hidden 了 */
+  height: 5px;
+  pointer-events: none; /* 讓滑鼠可以點擊穿透偽元素，不然會點不到下面 */
+  transition: 0.2s;
+}
+
+.progressbar input[type="range"]::-webkit-slider-thumb:before {
+  left: -1997px;
+  background: #f22;
+}
+.progressbar input[type="range"]::-webkit-slider-thumb:after {
+  left: 10px;
+  background: #edc;
+}

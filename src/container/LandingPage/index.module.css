@@ -1,0 +1,98 @@
+/* -------------- Right AD -------------- */
+.top-ad {
+  margin-top: 30px;
+  color: white;
+  position: relative;
+}
+
+.top-ad .ad-text {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+}
+
+.top-ad h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.top-ad img {
+  width: 100%;
+}
+
+.top-ad p {
+  padding-right: 20px;
+  font-size: 24px;
+}
+/* -------------- Right List -------------- */
+.list-title {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.composer-item {
+  cursor: pointer;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list li {
+  margin-right: 40px;
+  margin-bottom: 30px;
+}
+
+.list h2 {
+  display: block;
+}
+.list div,
+.list h2 {
+  text-align: center;
+  position: relative;
+}
+.list div {
+  cursor: pointer;
+}
+
+.list img {
+  display: block;
+  border-radius: 50%;
+  width: 180px;
+  margin-bottom: 10px;
+}
+
+.list h2 {
+  font-size: 18px;
+}
+
+/* Square List */
+.list-square img {
+  border-radius: 0;
+}
+
+.list-square span {
+  color: #999;
+  display: block;
+  font-size: 13px;
+}
+
+.list-square svg {
+  display: none;
+  line-height: 0.5;
+  position: absolute;
+  left: 90px;
+  top: 90px;
+  transform: translate(-50%, -50%);
+  font-size: 72px;
+  color: var(--pri-color);
+  background-image: radial-gradient(#fff 20%, transparent);
+  border-radius: 50%;
+}
+
+.list-square div:hover svg {
+  display: block;
+}

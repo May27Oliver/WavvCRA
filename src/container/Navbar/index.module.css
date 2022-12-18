@@ -1,0 +1,55 @@
+nav .logo {
+  display: block;
+  cursor: pointer;
+}
+
+nav .logo img {
+  display: block;
+  width: 150px;
+  margin: 30px auto 50px;
+}
+
+.nav-main {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  margin: 0 20px;
+  font-size: 18px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.nav-main li {
+  margin-bottom: 5px;
+  display: block;
+  line-height: 2.5;
+  padding: 0 20px;
+  border-radius: 50px;
+  cursor: not-allowed;
+}
+
+.nav-main li svg {
+  margin-right: 15px;
+}
+
+.nav-main li a:hover {
+  background-color: #e5e5e5;
+}
+
+.nav-sub {
+  padding-top: 20px;
+}
+
+.nav-sub li {
+  margin: 0 20px;
+}
+
+.nav-sub li a {
+  display: block;
+  line-height: 2.5;
+  padding-left: 30px;
+  cursor: not-allowed;
+}
+
+.nav-sub li a:hover {
+  color: var(--pri-color);
+}

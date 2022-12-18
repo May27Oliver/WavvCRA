@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;700;800;900&display=swap");
+
+.wrapper {
+  /* display: flex; */
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+:root {
+  --pri-color: #c30d22;
+  --pri-hover: #9f1f24;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+input,
+textarea,
+button {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+nav {
+  background-color: #f6f6f6;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+main {
+  flex-grow: 1;
+  margin-left: 250px;
+}
+
+/* -------------- Bottom Player -------------- */
+.player {
+  width: 100vw;
+  height: 80px;
+  background-color: #311717;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* info */
+.player-info {
+  display: block;
+  color: white;
+  flex-grow: 1;
+}
+
+.player-info img {
+  height: 60px;
+  margin-right: 10px;
+  float: left;
+}
+
+.player-info h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.player-info span {
+  display: block;
+  font-size: 13px;
+  opacity: 0.5;
+}
+/* control */
+.player-control {
+  flex-grow: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-control i {
+  font-size: 38px;
+  margin: 0 10px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.player-control i:first-child,
+.player-control i:last-child {
+  font-size: 18px;
+}
+
+.player-control i:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+/* volume */
+.player-volume {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+.player-volume i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.player-volume_bar {
+  width: 100px;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.player-volume_bar p {
+  height: 5px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/* -------------- Left Navigation -------------- */
+nav .logo {
+  display: block;
+}
+
+nav .logo img {
+  display: block;
+  width: 150px;
+  margin: 30px auto 50px;
+}
+
+.nav-main {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  margin: 0 20px;
+  font-size: 18px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.nav-main li {
+  margin-bottom: 5px;
+}
+
+.nav-main li a {
+  display: block;
+  line-height: 2.5;
+  padding: 0 20px;
+  border-radius: 50px;
+  cursor: not-allowed;
+}
+
+.nav-main li i {
+  margin-right: 15px;
+}
+
+.nav-main li a:hover {
+  background-color: #e5e5e5;
+}
+
+.nav-sub {
+  padding-top: 20px;
+}
+
+.nav-sub li {
+  margin: 0 20px;
+}
+
+.nav-sub li a {
+  display: block;
+  line-height: 2.5;
+  padding-left: 30px;
+  cursor: not-allowed;
+}
+
+.nav-sub li a:hover {
+  color: var(--pri-color);
+}
+
+/* -------------- Right Top -------------- */
+.top {
+  height: 60px;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  position: fixed;
+  left: 250px;
+  top: 0;
+  width: calc(100% - 250px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 10;
+}
+
+/* No Login */
+.top-nologin {
+  padding-right: 30px;
+}
+
+.top-nologin a {
+  display: block;
+  background-color: var(--pri-color);
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 0 20px;
+  color: white;
+  height: 40px;
+  line-height: 40px;
+}
+
+.top-nologin i {
+  margin-right: 10px;
+}
+
+.top-nologin a {
+}
+
+.top-nologin a:hover {
+  background-color: var(--pri-hover);
+}
+
+/* Login */
+.top-login {
+  padding-right: 20px;
+  display: flex;
+}
+
+.top-login .top-userhead {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.top-login .top-userhead img {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.top-upload {
+  background-color: var(--pri-color);
+  color: white;
+  padding: 0 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.top-upload img {
+  margin-right: 10px;
+}
+
+/* -------------- Right Content -------------- */
+.content {
+  margin-top: 60px;
+  padding: 1px 30px 70px;
+}

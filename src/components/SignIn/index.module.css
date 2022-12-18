@@ -1,0 +1,45 @@
+/* -------------- Right AD -------------- */
+.top {
+  height: 60px;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  position: fixed;
+  left: 250px;
+  top: 0;
+  width: calc(100% - 250px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 10;
+  caret-color: transparent;
+}
+
+/* No Login */
+.top-nologin {
+  padding-right: 30px;
+}
+
+.top-nologin button {
+  display: block;
+  background-color: var(--pri-color);
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 0 20px;
+  color: white;
+  height: 40px;
+  line-height: 40px;
+  outline: none;
+  border: none;
+}
+
+.top-nologin svg {
+  margin-right: 10px;
+}
+
+.top-nologin button {
+  cursor: pointer;
+}
+
+.top-nologin button:hover {
+  background-color: var(--pri-hover);
+}
